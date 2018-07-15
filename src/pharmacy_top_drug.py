@@ -28,7 +28,7 @@ for line in f:
      
     drug_id,lname,fname,drug_name,drug_cost = new_line
     try:
-        drug_cost = int(drug_cost)
+        drug_cost = int(float(drug_cost))
     except ValueError:
             # drug_cost is not a number, ignore this line
         continue
